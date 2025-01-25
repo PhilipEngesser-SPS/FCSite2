@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Examples.cs" />
     <Compile Include="FCSite.cs" />
+<Compile Include="SitesMaint.cs" />
 <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
