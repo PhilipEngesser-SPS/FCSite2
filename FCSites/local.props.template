@@ -1,0 +1,9 @@
+<!-- local.props.template 
+	When you first clone this repo make a copy of this file called "local.props"
+	Also replace Value_Needs_To_Be_Added with the Bin folder where you want your dll to be placed when you build the Mapadoc_test.csproj
+-->
+<Project>
+  <PropertyGroup>
+    <BuildOutputPath>Value_Needs_To_Be_Added</BuildOutputPath>
+  </PropertyGroup>
+</Project>
