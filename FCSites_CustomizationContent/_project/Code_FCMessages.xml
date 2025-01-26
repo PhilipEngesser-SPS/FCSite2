@@ -1,0 +1,16 @@
+﻿<Graph ClassName="FCMessages" Source="#CDATA" IsNew="True" FileType="NewFile">
+    <CDATA name="Source"><![CDATA[using System;
+
+namespace FCSites
+{
+   public static class FCMessages
+   {
+                  public const string Open = "Open";
+                  public const string Hold = "On Hold";
+                  public const string Completed = "Completed";
+                  public const string Cancelled = "Canceled";
+                  public const string NumberingSeq = "Test";
+   }
+
+}]]></CDATA>
+</Graph>

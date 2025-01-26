@@ -1,0 +1,7 @@
+﻿<DAC type="PX.Objects.CT.Contract">
+    <Field FieldName="UsrSiteID" TypeName="int" MapDbTable="Contract" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBInt]
+[PXUIField(DisplayName="SiteID")]
+]]></CDATA>
+    </Field>
+</DAC>

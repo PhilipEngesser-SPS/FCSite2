@@ -2,6 +2,8 @@
     <CDATA name="Source"><![CDATA[using System;
 using PX.Data;
 using PX.Data.BQL.Fluent;
+using PX.Objects.PM;
+using PX.Objects.CT;
 
 
 namespace FCSites
@@ -9,15 +11,19 @@ namespace FCSites
   public class SiteMaint3 : PXGraph<SiteMaint3>
   {
     
-    public SelectFrom<FCSite>.View SiteView = null!;
-
+    public SelectFrom<FCSite>.View SiteView;
+    //public SelectFrom<PMProject>.View ProjectView = null!;
+    //public PXSelect<PMProject, InnerJoin<>FCsite, On<PMProject.siteID, Equal<FCSite.siteName>>> ProjectView = null!;
+        
+        public PXSelectJoin<Contract, InnerJoin<FCSite, On<ContractExt.usrSiteID, 
+            Equal<FCSite.siteid>>>> projectList;
 
     public PXSave<FCSite> Save;
     public PXCancel<FCSite> Cancel;
 
 
-    public PXFilter<FCSite> MasterView;
-    public PXFilter<DetailsTable> DetailsView;
+    //public PXFilter<FCSite> MasterView;
+    public PXFilter<PMProject> DetailsView;
 
     [Serializable]
     public class MasterTable : PXBqlTable, IBqlTable

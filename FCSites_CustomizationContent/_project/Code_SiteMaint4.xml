@@ -1,0 +1,35 @@
+﻿<Graph ClassName="SiteMaint4" Source="#CDATA" IsNew="True" FileType="NewGraph">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Data;
+using PX.Data.BQL.Fluent;
+
+namespace FCSites
+{
+  public class SiteMaint4 : PXGraph<SiteMaint4>
+  {
+    
+    public SelectFrom<FCSite>.View SiteView;
+
+    public PXSave<FCSite> Save;
+    public PXCancel<FCSite> Cancel;
+
+
+    public PXFilter<MasterTable> MasterView;
+    public PXFilter<DetailsTable> DetailsView;
+
+    [Serializable]
+    public class MasterTable : PXBqlTable, IBqlTable
+    {
+
+    }
+
+    [Serializable]
+    public class DetailsTable : PXBqlTable, IBqlTable
+    {
+
+    }
+
+
+  }
+}]]></CDATA>
+</Graph>

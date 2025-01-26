@@ -1,0 +1,5 @@
+﻿<Page path="~/Pages/FC/FC301014.aspx" pageSource="hVLBbtswDD2nQP9B0JBrnGzdpbCLbU67FEiGoM6S3QbF4hKisuxJcpLusG+fKDuJt7aYDgbxSJPvPTLuf2BzsQE2FXpT+yDh6RvOZsI6MJS4Q+Wx39EZsdEUrVsi7AdFADn7WLvydgfardBAXSXcmRo4WwqFUjh4gJ81WJfwH0JZj6elbPvepe+Go+HoaiBsdRjklrN7vQWDziacZn0/FnC2QEd/fNWOAhlYc9a/ubyIvYaG3uKpArZE42qh5sJt/0ucfvcN/PTrtNTOK2D344TnPh4RzwDNlchhUioJhpLVdpxx9lBr4RVlYHa+kW/Ti6vD9fzbWDiRlbXJIXSSXpJpSm1T6vlZXJOURTBphZKIjobDPr+8YO0jJV9EESzK0IEd0HcmULurTtncYCHME2lKeKOU4k4FMevFqVBqLfLHtCwKoaUNsj0evZDw6D9KyOOo49HNK5a9fd2y6cmGZ459NihDi40Pnrl1ZnG0s2sYmwButr589H5YHTjLHlFTXeuLv0ylyj2d5wQlHA+w8WQKO1BBcK/DJKBh6gyKNZiEj8EJVDb42lSTr3FaqrrQ9ozQO6ejv/KtpacBDYOoQyEmkhn+gmCh3zONXqGW5Z6zWy38xcjjycxQd3RzFrUdcoel/iRMu/ToBHS2ShRe2Ocf">
+    <PXDataSource ID="ds" ParentId="phDS_ds" TypeFullName="PX.Web.UI.PXDataSource">
+        <Prop Key="PrimaryView" Value="SiteView" />
+    </PXDataSource>
+</Page>
