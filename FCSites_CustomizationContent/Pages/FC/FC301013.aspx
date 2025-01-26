@@ -1,10 +1,10 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPages/FormDetail.master" AutoEventWireup="true" ValidateRequest="false" CodeFile="FC301000.aspx.cs" Inherits="Page_FC301000" Title="Untitled Page" %>
+<%@ Page Language="C#" MasterPageFile="~/MasterPages/FormDetail.master" AutoEventWireup="true" ValidateRequest="false" CodeFile="FC301013.aspx.cs" Inherits="Page_FC301013" Title="Untitled Page" %>
 <%@ MasterType VirtualPath="~/MasterPages/FormDetail.master" %>
 
 <asp:Content ID="cont1" ContentPlaceHolderID="phDS" Runat="Server">
 	<px:PXDataSource ID="ds" runat="server" Visible="True" Width="100%"
-        TypeName="FCSites.SitesMaint"
-        PrimaryView="mainView"
+        TypeName="FCSites.SiteMaint3"
+        PrimaryView="SiteView"
         >
 		<CallbackCommands>
 

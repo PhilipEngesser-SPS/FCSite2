@@ -1,0 +1,32 @@
+﻿<Graph ClassName="TestGraph" Source="#CDATA" IsNew="True" FileType="NewGraph">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Data;
+
+namespace FCSites
+{
+	public class TestGraph : PXGraph<TestGraph>
+	{
+
+		public PXSave<MasterTable> Save;
+		public PXCancel<MasterTable> Cancel;
+
+
+		public PXFilter<MasterTable> MasterView;
+		public PXFilter<DetailsTable> DetailsView;
+
+		[Serializable]
+		public class MasterTable : PXBqlTable, IBqlTable
+		{
+
+		}
+
+		[Serializable]
+		public class DetailsTable : PXBqlTable, IBqlTable
+		{
+
+		}
+
+
+	}
+}]]></CDATA>
+</Graph>

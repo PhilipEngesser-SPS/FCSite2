@@ -1,0 +1,96 @@
+﻿<Graph ClassName="FCSite" Source="#CDATA" IsNew="True" FileType="NewDac">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Data;
+
+namespace FCSites
+{
+	[Serializable]
+	[PXCacheName("FCSite")]
+	public class FCSite : PXBqlTable, IBqlTable
+	{
+		#region Siteid
+		[PXDBInt(IsKey = true)]
+		[PXUIField(DisplayName = "Siteid")]
+		public virtual int? Siteid { get; set; }
+		public abstract class siteid : PX.Data.BQL.BqlInt.Field<siteid> { }
+		#endregion
+
+		#region SiteName
+		[PXDBString(255, InputMask = "")]
+		[PXUIField(DisplayName = "Site Name")]
+		public virtual string SiteName { get; set; }
+		public abstract class siteName : PX.Data.BQL.BqlString.Field<siteName> { }
+		#endregion
+
+		#region CurrencyID
+		[PXDBString(10, InputMask = "")]
+		[PXUIField(DisplayName = "Currency ID")]
+		public virtual string CurrencyID { get; set; }
+		public abstract class currencyID : PX.Data.BQL.BqlString.Field<currencyID> { }
+		#endregion
+
+		#region SiteStatus
+		[PXDBString(50, InputMask = "")]
+		[PXUIField(DisplayName = "Site Status")]
+		public virtual string SiteStatus { get; set; }
+		public abstract class siteStatus : PX.Data.BQL.BqlString.Field<siteStatus> { }
+		#endregion
+
+		#region FacilityManagementCompany
+		[PXDBInt()]
+		[PXUIField(DisplayName = "Facility Management Company")]
+		public virtual int? FacilityManagementCompany { get; set; }
+		public abstract class facilityManagementCompany : PX.Data.BQL.BqlInt.Field<facilityManagementCompany> { }
+		#endregion
+
+		#region Tstamp
+		[PXDBTimestamp()]
+		[PXUIField(DisplayName = "Tstamp")]
+		public virtual byte[] Tstamp { get; set; }
+		public abstract class tstamp : PX.Data.BQL.BqlByteArray.Field<tstamp> { }
+		#endregion
+
+		#region Noteid
+		[PXNote()]
+		public virtual Guid? Noteid { get; set; }
+		public abstract class noteid : PX.Data.BQL.BqlGuid.Field<noteid> { }
+		#endregion
+
+		#region CreatedByID
+		[PXDBCreatedByID()]
+		public virtual Guid? CreatedByID { get; set; }
+		public abstract class createdByID : PX.Data.BQL.BqlGuid.Field<createdByID> { }
+		#endregion
+
+		#region CreatedByScreenID
+		[PXDBCreatedByScreenID()]
+		public virtual string CreatedByScreenID { get; set; }
+		public abstract class createdByScreenID : PX.Data.BQL.BqlString.Field<createdByScreenID> { }
+		#endregion
+
+		#region CreatedDateTime
+		[PXDBCreatedDateTime()]
+		public virtual DateTime? CreatedDateTime { get; set; }
+		public abstract class createdDateTime : PX.Data.BQL.BqlDateTime.Field<createdDateTime> { }
+		#endregion
+
+		#region LastModifiedByID
+		[PXDBLastModifiedByID()]
+		public virtual Guid? LastModifiedByID { get; set; }
+		public abstract class lastModifiedByID : PX.Data.BQL.BqlGuid.Field<lastModifiedByID> { }
+		#endregion
+
+		#region LastModifiedByScreenID
+		[PXDBLastModifiedByScreenID()]
+		public virtual string LastModifiedByScreenID { get; set; }
+		public abstract class lastModifiedByScreenID : PX.Data.BQL.BqlString.Field<lastModifiedByScreenID> { }
+		#endregion
+
+		#region LastModifiedDateTime
+		[PXDBLastModifiedDateTime()]
+		public virtual DateTime? LastModifiedDateTime { get; set; }
+		public abstract class lastModifiedDateTime : PX.Data.BQL.BqlDateTime.Field<lastModifiedDateTime> { }
+		#endregion
+	}
+}]]></CDATA>
+</Graph>

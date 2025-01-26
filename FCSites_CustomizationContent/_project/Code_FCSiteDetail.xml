@@ -1,0 +1,123 @@
+﻿<Graph ClassName="FCSiteDetail" Source="#CDATA" IsNew="True" FileType="NewDac">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Data;
+
+namespace FCSites
+{
+	[Serializable]
+	[PXCacheName("FCSiteDetail")]
+	public class FCSiteDetail : PXBqlTable, IBqlTable
+	{
+		#region DetailID
+		[PXDBIdentity(IsKey = true)]
+		public virtual int? DetailID { get; set; }
+		public abstract class detailID : PX.Data.BQL.BqlInt.Field<detailID> { }
+		#endregion
+
+		#region SiteID
+		[PXDBInt()]
+		[PXUIField(DisplayName = "Site ID")]
+		public virtual int? SiteID { get; set; }
+		public abstract class siteID : PX.Data.BQL.BqlInt.Field<siteID> { }
+		#endregion
+
+		#region SiteName
+		[PXDBString(100, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Site Name")]
+		public virtual string SiteName { get; set; }
+		public abstract class siteName : PX.Data.BQL.BqlString.Field<siteName> { }
+		#endregion
+
+		#region Template
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Template")]
+		public virtual string Template { get; set; }
+		public abstract class template : PX.Data.BQL.BqlString.Field<template> { }
+		#endregion
+
+		#region Description
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Description")]
+		public virtual string Description { get; set; }
+		public abstract class description : PX.Data.BQL.BqlString.Field<description> { }
+		#endregion
+
+		#region FacilityManagementComp
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Facility Management Comp")]
+		public virtual string FacilityManagementComp { get; set; }
+		public abstract class facilityManagementComp : PX.Data.BQL.BqlString.Field<facilityManagementComp> { }
+		#endregion
+
+		#region ActualIncome
+		[PXDBDecimal()]
+		[PXUIField(DisplayName = "Actual Income")]
+		public virtual Decimal? ActualIncome { get; set; }
+		public abstract class actualIncome : PX.Data.BQL.BqlDecimal.Field<actualIncome> { }
+		#endregion
+
+		#region ActualExpense
+		[PXDBDecimal()]
+		[PXUIField(DisplayName = "Actual Expense")]
+		public virtual Decimal? ActualExpense { get; set; }
+		public abstract class actualExpense : PX.Data.BQL.BqlDecimal.Field<actualExpense> { }
+		#endregion
+
+		#region Margin
+		[PXDBDecimal()]
+		[PXUIField(DisplayName = "Margin")]
+		public virtual Decimal? Margin { get; set; }
+		public abstract class margin : PX.Data.BQL.BqlDecimal.Field<margin> { }
+		#endregion
+
+		#region Percentage
+		[PXDBDecimal()]
+		[PXUIField(DisplayName = "Percentage")]
+		public virtual Decimal? Percentage { get; set; }
+		public abstract class percentage : PX.Data.BQL.BqlDecimal.Field<percentage> { }
+		#endregion
+
+		#region Status
+		[PXDBString(50, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Status")]
+		public virtual string Status { get; set; }
+		public abstract class status : PX.Data.BQL.BqlString.Field<status> { }
+		#endregion
+
+		#region TabSummary
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Tab Summary")]
+		public virtual string TabSummary { get; set; }
+		public abstract class tabSummary : PX.Data.BQL.BqlString.Field<tabSummary> { }
+		#endregion
+
+		#region TabProjects
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Tab Projects")]
+		public virtual string TabProjects { get; set; }
+		public abstract class tabProjects : PX.Data.BQL.BqlString.Field<tabProjects> { }
+		#endregion
+
+		#region TabServices
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Tab Services")]
+		public virtual string TabServices { get; set; }
+		public abstract class tabServices : PX.Data.BQL.BqlString.Field<tabServices> { }
+		#endregion
+
+		#region TabInvoices
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Tab Invoices")]
+		public virtual string TabInvoices { get; set; }
+		public abstract class tabInvoices : PX.Data.BQL.BqlString.Field<tabInvoices> { }
+		#endregion
+
+		#region TabFiles
+		[PXDBString(255, IsUnicode = true, InputMask = "")]
+		[PXUIField(DisplayName = "Tab Files")]
+		public virtual string TabFiles { get; set; }
+		public abstract class tabFiles : PX.Data.BQL.BqlString.Field<tabFiles> { }
+		#endregion
+	}
+}]]></CDATA>
+</Graph>

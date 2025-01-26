@@ -1,0 +1,42 @@
+﻿<Graph ClassName="SiteMaint3" Source="#CDATA" IsNew="True" FileType="NewGraph">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Data;
+using PX.Data.BQL.Fluent;
+
+
+namespace FCSites
+{
+  public class SiteMaint3 : PXGraph<SiteMaint3>
+  {
+    
+    public SelectFrom<FCSite>.View SiteView = null!;
+
+
+    public PXSave<FCSite> Save;
+    public PXCancel<FCSite> Cancel;
+
+
+    public PXFilter<FCSite> MasterView;
+    public PXFilter<DetailsTable> DetailsView;
+
+    [Serializable]
+    public class MasterTable : PXBqlTable, IBqlTable
+    {
+          #region Siteid
+          [PXDBInt(IsKey = true)]
+          [PXUIField(DisplayName = "Siteid")]
+          public virtual int? Siteid { get; set; }
+          public abstract class siteid : PX.Data.BQL.BqlInt.Field<siteid> { }
+          #endregion
+    }
+
+    [Serializable]
+    public class DetailsTable : PXBqlTable, IBqlTable
+    {
+
+    }
+
+
+  }
+}]]></CDATA>
+</Graph>
